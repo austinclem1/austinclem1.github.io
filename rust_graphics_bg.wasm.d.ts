@@ -1,0 +1,30 @@
+/* tslint:disable */
+/* eslint-disable */
+export const memory: WebAssembly.Memory;
+export function __wbg_rustcanvas_free(a: number): void;
+export function rustcanvas_new(): number;
+export function rustcanvas_initialize(a: number): void;
+export function rustcanvas_initialize_particles(a: number, b: number): void;
+export function rustcanvas_update_1(a: number, b: number): void;
+export function rustcanvas_update_2(a: number, b: number): void;
+export function rustcanvas_render(a: number): void;
+export function rustcanvas_spawn_particle(a: number, b: number, c: number, d: number, e: number): void;
+export function rustcanvas_spawn_gravity_well(a: number, b: number, c: number): void;
+export function rustcanvas_try_selecting(a: number, b: number, c: number): number;
+export function rustcanvas_release_selection(a: number): void;
+export function rustcanvas_move_selection_to(a: number, b: number, c: number): void;
+export function rustcanvas_try_removing(a: number, b: number, c: number): void;
+export function rustcanvas_clear_particles(a: number): void;
+export function rustcanvas_remove_particles(a: number, b: number): void;
+export function rustcanvas_set_gravity_well_mass(a: number, b: number): void;
+export function rustcanvas_get_gravity_well_mass(a: number): number;
+export function rustcanvas_get_particle_count(a: number): number;
+export function rustcanvas_set_particle_trail_scale(a: number, b: number): void;
+export function rustcanvas_get_particle_trail_scale(a: number): number;
+export function rustcanvas_set_borders_active(a: number, b: number): void;
+export function rustcanvas_set_should_clear_screen(a: number, b: number): void;
+export function rustcanvas_add_texture_from_image(a: number, b: number, c: number, d: number): void;
+export function __wbindgen_malloc(a: number): number;
+export function __wbindgen_realloc(a: number, b: number, c: number): number;
+export function __wbindgen_free(a: number, b: number): void;
+export function __wbindgen_exn_store(a: number): void;
