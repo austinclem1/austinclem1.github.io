@@ -903,7 +903,7 @@ struct GravityWell {
 
 impl GravityWell {
     const RADIUS: u32 = 20;
-    const ROTATION_SPEED: f64 = 2.0;
+    const ROTATION_SPEED: f64 = -2.0;
 
     fn new(pos: [f64; 2], mass: f64) -> Self {
         GravityWell {
