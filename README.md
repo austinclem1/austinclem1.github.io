@@ -7,4 +7,4 @@ Thank you to the [Rust and WebAssembly Working Group](https://github.com/rustwas
 
 
 
-[particle-demo-url]: <https://austinclem1.github.io/demos/particles/particles.html>
+[particle-demo-url]: <https://austinclem1.github.io/particles.html>
