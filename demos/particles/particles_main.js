@@ -102,7 +102,7 @@ async function run() {
   image.onload = function() {
       rustCanvas.add_texture_from_image("gravity_well", image);
   };
-  image.src = './assets/spiral.png';
+  image.src = '../../assets/spiral.png';
   rustCanvas.spawn_gravity_well(canvas.width / 2.0, canvas.height / 2.0);
   rustCanvas.initialize_particles(6000);
 
