@@ -1,4 +1,4 @@
 backup/
-rust/target/
+rust/particles/target/
 Cargo.lock
 *.ts
