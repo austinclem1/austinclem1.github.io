@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Rust Graphics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap -->
+		<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
+  </head>
+  <body>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="row">
+						<canvas id="canvas" width="800" height="600"</canvas>
+					</div>
+					<h2><span class="badge badge-secondary">Instructions:</span></h2>
+					<h5><a href="https://github.com/austinclem1/rust-wasm-particles">View Source Code Here</a></h5>
+					<br />
+					<p class="badge badge-primary">Left-Click to Spawn Particles</p>
+					<br />
+					<p class="badge badge-primary">Click and Drag to Move Gravity Well</p>
+					<br />
+					<p class="badge badge-primary">Right-Click to Delete a Gravity Well</p>
+					<br />
+					<p class="badge badge-primary">Ctrl-Click to Spawn a Gravity Well</p>
+				</div>
+				<div class="col">
+					<div class="card text-white bg-dark">
+						<div class="card-header">Settings</div>
+						<div class="card-body">
+							<h3><label id="particle-count-label" class="badge badge-primary"></label></h3>
+							<br />
+							<h4><label id="fps-label" class="badge badge-primary"></label></h4>
+							<label id="sim-speed-label" class="label label-primary"></label>
+							<br />
+							<button id="sim-speed-down-button" class="btn btn-primary">-</button>
+							<button id="sim-speed-up-button" class="btn btn-primary">+</button>
+						</div>
+						<div class="card-body">
+							Gravity Well Mass
+							<br />
+							<input type="range" min="1" max="260" id="gravity-well-mass-slider" />
+						</div>
+						<div class="card-body">
+							Particle Trail Length
+							<br />
+							<input type="range" min="0.01" max="0.2" step="0.01" id="trail-scale-slider" />
+						</div>
+						<div class="card-body">
+							<button id="remove-some-particles-button" class="btn btn-primary">
+								Remove 250 Particles
+							</button>
+						</div>
+						<div class="card-body">
+							<button id="clear-particles-button" class="btn btn-primary">
+								Clear All Particles
+							</button>
+						</div>
+						<div class="card-body">
+							<input type="checkbox" id="borders-active-checkbox" />
+							<label for="borders-active-checkbox">Solid Borders</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>
